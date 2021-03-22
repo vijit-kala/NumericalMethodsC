@@ -3,6 +3,7 @@
 #include <math.h>
 #define e 2.71828
 
+// F(x)
 float f(float x) {
     return x*x - 7;
 }
@@ -11,6 +12,7 @@ int main() {
     float a, b;
     float tolError;
 
+    // Input
     do {
         printf("Input interval a,b: ");
         scanf("%f %f", &a, &b);
@@ -20,6 +22,8 @@ int main() {
 
     printf("Input tolerable error: ");
     scanf("%f", &tolError);
+
+    // Bisection Method
 
     int cnt = 0;
     float prev = a;
