@@ -76,11 +76,7 @@ int main() {
         x[i] = 0;
     x[n-1] = mat[n-1][n]/mat[n-1][n-1];
     for(int i=n-2; i>=0; i--) {
-        float sum = 0;
-        for(int j=i+1; j<n; j++) {
-            sum += (mat[i][j]*x[j]);
-        }
-        x[i] = (mat[i][n] - sum)/mat[i][i];
+        x[i] = (mat[i][n])/mat[i][i];
     }
     printf("Solution: \n");
     for(int i=0; i<n; i++) {
