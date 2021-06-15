@@ -62,7 +62,7 @@ int main() {
         for(int j=i-1; j>=0; j--) {
             if(fabs(mat[i][j] < 0.000001)) {
                 printf("Unsolvable as diagonal element is zero\n");
-                break;
+                exit(1);
             }
             float div = mat[j][i]/mat[i][i];
             for(int k=i; k<=n; k++)
