@@ -17,7 +17,7 @@ int main() {
 
     printf("Input starting value and tolerable error along with number of iterations: ");
     scanf("%f %f %d", &x0, &tolError, &iter);
-
+// Newton Raphson Method.
     if(f(x0) == 0) {
         printf("Root: %.3f", x0);
         return 0;
